@@ -1,0 +1,331 @@
+/* restart CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* common */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width:50%;
+}
+.col-full{
+    width: 100%;
+}
+.cc {
+width: 800px;
+margin: auto;
+}
+/* main */
+#main{
+}
+#header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav>li>a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav>li>a:hover{
+    height: 46px;
+}
+#nav li{
+    display: inline-block;
+    color: white;
+    position:relative;
+}
+#nav li a{
+    
+    text-decoration-line: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display:block;
+}
+
+#nav .subnav li:hover{
+    width: 100%;
+}
+#nav li a:hover {
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 140px;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .nav-arrow{
+    font-size: 12px;
+}
+#nav .subnav {
+    top:46px;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#header .mobile-ti,
+#header .search{
+    display: inline-block;
+    color: white;
+    float: right;
+    line-height: 47px;
+    padding: 0 24px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#header .search:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .mobile-ti:hover{
+    background-color: #ccc;
+    color: black;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider1/chicago.jpg') top center / cover no-repeat
+   
+}
+#slider .text-content{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    right: 0%;
+    left: 0;
+    bottom: 48px;
+
+}
+#slide .text-header{
+    font-size: 24px;
+    font-weight: 500;
+}
+#slider .text1{
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content{
+
+    padding: 64px 0;
+}
+#content .content-tour, #content .content-contact,
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+#content .content-header{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 32px;
+}
+#content .content-sub{
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+#content .content-text{
+    text-align: center;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}    
+#content .member-list{
+    display: flex;
+    width: 800px;
+    margin-top: -17px;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 96px;
+}
+#content .member-item{
+    justify-content: center;
+    text-align: center;
+}
+#content .member-img{
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+/* content tour */
+#content .content-tour{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.ticket{  
+  width: 765px;
+  max-width: 100%;
+    background-color: white;
+    color: black;
+    margin: 40px auto;
+    list-style: none;
+}
+.ticket li{
+    font-size: 15px;
+    padding: 11px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+.ticket .sold-out{
+    background-color: #f44336;
+    padding: 3px 4px;
+    color: white;
+    margin-left: 16px;
+}
+.ticket .quality{
+    float: right;
+    padding: 0 8px;
+    margin-right: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 23px;
+    margin-top: -2px;
+}
+/* tour anh */
+#content .place-list{
+    width: 800px; 
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+#content .body{
+    text-align: left;
+    margin: 16px 16px 35px;
+    padding: 0px 15px;
+    margin-top: -4px;
+    background-color: white;
+    color: black;
+}
+#content .anh{
+    width: 235px;
+}
+#content .anh:hover{
+    opacity: 0.6;
+}
+#content .ten{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+#content .time{
+    padding-bottom: 15px;
+    color: #757575;
+}
+#content .mota{
+    line-height: 1.4;
+}
+#content .click{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 16px 0px;
+}
+/* contact */
+.cc {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    }
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-infor [class*="ti"]{
+    width: 30px;
+    display: inline-block;
+}
+.lienlac{
+    font-size: 15px;
+}
+.row a:hover{
+    color:#f44336;
+}
+.form-control{
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.message{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.send{
+    float: right;
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    border:none;
+    background-color: black;
+}
+.send:hover{
+    color: black;
+    background-color: #ccc;
+}
+.map-section img{
+    width: 100%;
+    margin-top: 64px;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.media{
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+.media a{
+    text-decoration: none;
+    color: #757575;
+}
